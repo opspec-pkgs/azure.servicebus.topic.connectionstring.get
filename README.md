@@ -25,26 +25,17 @@ run:
     pkg: { ref: github.com/opspec-pkgs/azure.servicebus.topic.connectionstring.get#VERSION }
     inputs: 
       subscriptionId:
-      location:
       loginId:
       loginSecret:
       loginTenantId:
-      name:
+      authRule:
+      topic:
       namespace:
       resourceGroup:
       # begin optional args
-      autoDeleteOnIdle:
-      defaultMessageTimeToLive:
-      duplicateDetectionHistoryTimeWindow:
-      enableBatchedOperations:
-      enablePartitioning:
-      deadLetteringOnMessageExpiration:
-      lockDuration:
       loginType:
-      maxDeliveryCount:
-      maxSizeInMegabytes:
-      requiresDuplicateDetection:
-      requiresSession:
-      supportOrdering:
+      authRuleKey:
       # end optional args
+    outputs:
+      connectionString:
 ```
