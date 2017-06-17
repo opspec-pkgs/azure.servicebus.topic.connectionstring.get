@@ -1,5 +1,5 @@
 # problem statement
-creates an azure servicebus queue (if it doesn't already exist)
+gets an azure servicebus topic connection string
 
 # example usage
 
