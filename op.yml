@@ -1,5 +1,5 @@
 name: azure.servicebus.topic.connectionstring.get
-description: creates an azure servicebus queue (if it doesn't already exist)
+description: gets an azure servicebus topic connection string
 inputs:
   subscriptionId:
     string:
