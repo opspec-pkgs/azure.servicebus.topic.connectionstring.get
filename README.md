@@ -1,45 +1,47 @@
 [![Build Status](https://travis-ci.org/opspec-pkgs/azure.servicebus.topic.connectionstring.get.svg?branch=master)](https://travis-ci.org/opspec-pkgs/azure.servicebus.topic.connectionstring.get)
 
+<img src="icon.svg" alt="icon" height="100px">
+
 # Problem statement
 
 gets an azure servicebus topic connection string
 
+# Format
+
+this version of the pkg is in [![opspec 0.1.5](https://img.shields.io/badge/opspec-0.1.5-brightgreen.svg?colorA=6b6b6b&colorB=fc16be)](https://opspec.io/0.1.5/packages.html) format
+
 # Example usage
 
-> note: in examples, VERSION represents a version of the
-> azure.servicebus.topic.connectionstring.get pkg
-
-## install
+## Install
 
 ```shell
-opctl pkg install github.com/opspec-pkgs/azure.servicebus.topic.connectionstring.get#VERSION
+opctl pkg install github.com/opspec-pkgs/azure.servicebus.topic.connectionstring.get#1.0.1
 ```
 
-## run
+## Run
 
 ```
-opctl run github.com/opspec-pkgs/azure.servicebus.topic.connectionstring.get#VERSION
+opctl run github.com/opspec-pkgs/azure.servicebus.topic.connectionstring.get#1.0.1
 ```
 
-## compose
+## Compose
 
 ```yaml
 op:
-  pkg: { ref: github.com/opspec-pkgs/azure.servicebus.topic.connectionstring.get#VERSION }
-  inputs: 
-    subscriptionId:
+pkg: { ref: github.com/opspec-pkgs/azure.servicebus.topic.connectionstring.get#1.0.1 }
+inputs:
+    authRule:
     loginId:
     loginSecret:
     loginTenantId:
-    authRule:
-    topic:
     namespace:
     resourceGroup:
-    # begin optional args
-    loginType:
+    subscriptionId:
+    topic:
+    # params w/ default
     authRuleKey:
-    # end optional args
-  outputs:
+    loginType:
+outputs:
     connectionString:
 ```
 
