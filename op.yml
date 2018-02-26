@@ -1,5 +1,6 @@
-name: azure.servicebus.topic.connectionstring.get
+name: github.com/opspec-pkgs/azure.servicebus.topic.connectionstring.get
 description: gets an azure servicebus topic connection string
+icon: /icon.svg
 inputs:
   subscriptionId:
     string:
@@ -48,14 +49,14 @@ outputs:
   connectionString:
     string:
       description: the topic connection string
-version: 1.0.0
+version: 1.0.1
 run:
   container:
-    image: { ref: 'opspecpkgs/azure.servicebus.topic.connectionstring.get:1.0.0' }
-    cmd: [node, /index.js]
-    files: { /index.js }
-    stdOut:
-      connectionString=: connectionString
+    image: { ref: 'opspecpkgs/azure.servicebus.topic.connectionstring.get:1.0.1' }
+    cmd: [node, /cmd.js]
+    files:
+      /cmd.js:
+      /connectionString: $(connectionString)
     envVars:
       subscriptionId:
       loginId:
