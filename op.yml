@@ -1,6 +1,5 @@
 name: github.com/opspec-pkgs/azure.servicebus.topic.connectionstring.get
 description: gets an azure servicebus topic connection string
-icon: /icon.svg
 inputs:
   subscriptionId:
     string:
